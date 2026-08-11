@@ -6,7 +6,7 @@ ARG KOOHA_SHA256=a8f7d0d6fc1418264639a42833d66866475ed0d30b6f1f50b0b430c7d35b396
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-    cargo curl gettext libgstreamer-plugins-base1.0-dev \
+    cargo curl desktop-file-utils gettext libgstreamer-plugins-base1.0-dev \
     libgstreamer1.0-dev meson ninja-build rustc && \
     curl -fL "$KOOHA_URL" -o /tmp/kooha.tar.xz && \
     echo "$KOOHA_SHA256  /tmp/kooha.tar.xz" | sha256sum -c - && \
