@@ -3,7 +3,7 @@
   "manifest_version": "2.0",
   "name": "Kooha",
   "description": "Record the desktop and microphone with a focused GTK interface.",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "image": "ghcr.io/containerpak/kooha:main",
   "binaries": ["/usr/bin/kooha"],
   "desktop_entries": ["/usr/share/applications/io.github.seadve.Kooha.desktop"],
