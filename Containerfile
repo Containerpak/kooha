@@ -25,6 +25,6 @@ COPY --from=build /out/usr/ /usr/
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     gstreamer1.0-libav gstreamer1.0-plugins-bad \
-    gstreamer1.0-plugins-good gstreamer1.0-pulseaudio && \
+    gstreamer1.0-plugins-good gstreamer1.0-pulseaudio libglib2.0-bin && \
     glib-compile-schemas /usr/share/glib-2.0/schemas && \
     cpak-clean-junk
