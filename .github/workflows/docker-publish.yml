@@ -3,6 +3,8 @@ name: Publish
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: '5 4 * * 2'
   workflow_dispatch:
 
 permissions:
@@ -48,4 +50,3 @@ jobs:
           sbom: true
       - name: Verify exports
         run: docker run --rm ghcr.io/containerpak/kooha:main sh -c 'test -x /usr/bin/kooha && test -f /usr/share/applications/io.github.seadve.Kooha.desktop'
-
