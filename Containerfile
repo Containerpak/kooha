@@ -1,4 +1,4 @@
-FROM ghcr.io/containerpak/gtk-sdk:main AS build
+FROM ghcr.io/containerpak/gtk4-sdk:main AS build
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG KOOHA_URL=https://github.com/SeaDve/Kooha/releases/download/v2.3.2/kooha-2.3.2.tar.xz
@@ -16,7 +16,7 @@ RUN apt-get update && \
     meson compile -C /tmp/kooha/build && \
     DESTDIR=/out meson install -C /tmp/kooha/build
 
-FROM ghcr.io/containerpak/gtk:main
+FROM ghcr.io/containerpak/adwaita:main
 
 ARG DEBIAN_FRONTEND=noninteractive
 
