@@ -4,7 +4,7 @@
   "name": "Kooha",
   "description": "Record the desktop and microphone with a focused GTK interface.",
   "version": "2.3.2",
-  "image": "ghcr.io/containerpak/kooha@sha256:bd306250326e13ae13d70eb542f0cf83c75dfd63ff0bb36837d75c3e2bb1d2df",
+  "image": "ghcr.io/containerpak/kooha@sha256:9882c954f2e4055e5574fd1eca8978fa4abba6a5654becc3cba2b0cd98994fae",
   "binaries": [
     "/usr/bin/kooha"
   ],
